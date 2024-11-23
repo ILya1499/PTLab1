@@ -26,5 +26,5 @@ jobs:
          run: |
            pycodestyle src test
        - name: Test with pytest
-          run: |
+         run: |
             PYTHONPATH=./:./src/ pytest test
