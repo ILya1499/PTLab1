@@ -2,8 +2,7 @@
 import argparse
 import sys
 from CalcRating import CalcRating
-from TextDataReader import TextDataReader
-from indDataReader import indDataReader
+from TextDataReader2 import TextDataReader2
 
 
 def get_path_from_arguments(args) -> dict:
@@ -23,7 +22,7 @@ def main():
     #rating = CalcRating(students).calc()
     #print("Rating: ", rating)
 
-    reader = indDataReader()
+    reader = TextDataReader2()
     students = reader.read(path)
     so = CalcRating(students).so()
     print("Student:", so)
