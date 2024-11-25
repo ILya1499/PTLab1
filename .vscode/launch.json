@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["-p",".\\data\\data.txt","-i",".\\data\\data.yaml"]
+            "args": ["-p",".\\data\\data.yaml"]
         }
     ]
 }

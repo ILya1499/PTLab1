@@ -10,8 +10,6 @@ def get_path_from_arguments(args) -> dict:
     parser = argparse.ArgumentParser(description="Path to datafile")
     parser.add_argument("-p", dest="path", type=str, required=True,
                         help="Path to datafile")
-    parser.add_argument("-i", dest="pathi", type=str, required=True,
-                        help="Path to datafile")
     args = parser.parse_args(args)
     return args
 
@@ -19,15 +17,14 @@ def get_path_from_arguments(args) -> dict:
 def main():
     args = get_path_from_arguments(sys.argv[1:])
     path = args.path
-    pathi = args.pathi
-    reader = TextDataReader()
-    students = reader.read(path)
-    print("Students: ", students)
-    rating = CalcRating(students).calc()
-    print("Rating: ", rating)
+    #reader = TextDataReader()
+    #students = reader.read(path)
+    #print("Students: ", students)
+    #rating = CalcRating(students).calc()
+    #print("Rating: ", rating)
 
     reader = indDataReader()
-    students = reader.read(pathi)
+    students = reader.read(path)
     so = CalcRating(students).so()
     print("Student:", so)
 
