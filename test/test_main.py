@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from argparse import Namespace
 from src.main import get_path_from_arguments
 import pytest
 
@@ -16,7 +17,7 @@ def noncorrect_arguments_string() -> list[str]:
 def test_get_path_from_correct_arguments(
         correct_arguments_string: tuple[list[str], str]) -> None:
     path = get_path_from_arguments(correct_arguments_string[0])
-    assert path == correct_arguments_string[1]
+    assert path.path == correct_arguments_string[1]
 
 
 def test_get_path_from_noncorrect_arguments(
