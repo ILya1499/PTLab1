@@ -7,4 +7,5 @@
 ## библиотеки: отсутствуют
 ## технологии: `UML`, `YAML`
 ## UML-диаграммы:
+[Диаграмма](https://github.com/ILya1499/PTLab1/Docs/UMLDiagrams.png)
 ## выводы по работе:
