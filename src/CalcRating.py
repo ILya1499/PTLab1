@@ -2,6 +2,7 @@
 from Types import DataType
 RatingType = dict[str, float]
 
+
 class CalcRating:
     def __init__(self, data: DataType) -> None:
         self.data: DataType = data
@@ -24,4 +25,3 @@ class CalcRating:
                 if current >= 3:
                     return key
         return "Студентов не найдено"
-            

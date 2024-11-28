@@ -16,11 +16,11 @@ def get_path_from_arguments(args) -> dict:
 def main():
     args = get_path_from_arguments(sys.argv[1:])
     path = args.path
-    #reader = TextDataReader()
-    #students = reader.read(path)
-    #print("Students: ", students)
-    #rating = CalcRating(students).calc()
-    #print("Rating: ", rating)
+    # reader = TextDataReader()
+    # students = reader.read(path)
+    # print("Students: ", students)
+    # rating = CalcRating(students).calc()
+    # print("Rating: ", rating)
 
     reader = TextDataReader2()
     students = reader.read(path)
