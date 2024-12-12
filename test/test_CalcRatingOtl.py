@@ -31,11 +31,6 @@ class TestCalcRating:
 
         return data, rating_scores
 
-    #def test_init_calc_rating(self, input_data: tuple[DataType,
-    #                                                 RatingsType]) -> None:
-    #    calc_rating = CalcRatingOtl(input_data[0])
-    #    assert input_data[0] == calc_rating.data
-
     def test_calc(self, input_data: tuple[DataType, RatingsType]) -> None:
         student = CalcRatingOtl(input_data[0]).so()
         assert student == list(input_data[1].keys())[0]
